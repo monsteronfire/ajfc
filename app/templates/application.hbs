@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#app-canvas}}
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      {{partial 'offcanvas'}}
+      {{partial 'navbar'}}
+      {{outlet}}
+    </div>
+  </div>
+{{/app-canvas}}
